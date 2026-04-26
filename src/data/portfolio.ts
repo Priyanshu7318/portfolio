@@ -112,7 +112,7 @@ export const portfolioData = {
       },
       {
         degree: "Secondary",
-        field: "General",
+        field: "Super Science",
         institution: "PNSNIC Kayampur",
         duration: "2022",
         score: "79%"
