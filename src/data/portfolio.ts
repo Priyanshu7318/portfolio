@@ -15,9 +15,9 @@ export const portfolioData = {
       whatsapp: "https://wa.me/919651954404"
     },
     stats: {
-      leetcode: "375+",
+      leetcode: "400+",
       projects: "25+",
-      hackathons: "9+",
+      hackathons: "15+",
       gfgStreak: "165d"
     }
   },
@@ -45,7 +45,7 @@ export const portfolioData = {
     {
       id: "02",
       name: "Web Development",
-      description: "Full-stack apps with React, Node & FastAPI",
+      description: "Full-stack websites with React, Node & FastAPI",
       icon: "Code"
     },
     {
