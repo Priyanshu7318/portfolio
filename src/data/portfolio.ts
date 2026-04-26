@@ -133,7 +133,7 @@ export const portfolioData = {
       category: "AI / NLP",
       techStack: ["Python", "Whisper", "HuggingFace", "FastAPI", "MongoDB"],
       githubLink: "https://github.com/priyanshu/deeprecall",
-      images: ["/assets/projects/deeprecall-1.png", "/assets/projects/deeprecall-2.png", "/assets/projects/deeprecall-3.png", "/assets/projects/deeprecall-4.png"],
+      images: ["/assets/deeprecall-1.png", "/assets/projects/deeprecall-2.png", "/assets/projects/deeprecall-3.png", "/assets/projects/deeprecall-4.png"],
       imageCount: "04 / 04"
     },
     {
