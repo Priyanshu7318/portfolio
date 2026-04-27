@@ -48,7 +48,7 @@ export default function Projects() {
         <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-indigo-500/50 transition-colors">
           <HomeIcon size={14} />
         </div>
-        Back to Base
+        Back to home
       </Link>
 
       {/* Background Icons */}
