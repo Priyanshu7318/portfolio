@@ -235,8 +235,7 @@ export const portfolioData = {
       location: "Cyber City, Gurugram",
       role: "Frontend Developer",
       prize: "₹50,000",
-      images: ["/assets/hackathons/gs-1.png", "/assets/hackathons/gs-2.png"],
-      imageCount: "02 / 02"
+      images: ["/assets/hackathons/gs-1.png"],
     },
     {
       name: "BharatTech Xperience 2.0",
@@ -247,8 +246,7 @@ export const portfolioData = {
       location: "SVIET, Rajpura, Punjab",
       role: "Backend Developer",
       prize: "Best Community Project",
-      images: ["/assets/hackathons/bt-1.png", "/assets/hackathons/bt-2.png"],
-      imageCount: "02 / 02"
+      images: ["/assets/hackathons/bt-1.png"],
     },
     {
       name: "Endeavour Expo 2025",
@@ -259,8 +257,7 @@ export const portfolioData = {
       location: "CGC Jhanjeri, Mohali",
       role: "Software Management",
       prize: "Community Impact",
-      images: ["/assets/hackathons/ee-1.png", "/assets/hackathons/ee-2.png"],
-      imageCount: "02 / 02"
+      images: ["/assets/hackathons/ee-1.png"],
     },
     {
       name: "HackMOL 6.0",
@@ -271,8 +268,7 @@ export const portfolioData = {
       location: "NIT Jalandhar, Punjab",
       role: "Backend Developer",
       prize: "Network Building",
-      images: ["/assets/hackathons/hm-1.png", "/assets/hackathons/hm-2.png"],
-      imageCount: "02 / 02"
+      images: ["/assets/hackathons/hm-1.png"],
 
     },
     {
@@ -284,8 +280,7 @@ export const portfolioData = {
       location: "Tula's Institute, Dehradun",
       role: "AI Developer",
       prize: "AI & Innovation",
-      images: ["/assets/hackathons/hf-1.png", "/assets/hackathons/hf-2.png"],
-      imageCount: "02 / 02"
+      images: ["/assets/hackathons/hf-1.png"],
     }
   ],
   contact: {
