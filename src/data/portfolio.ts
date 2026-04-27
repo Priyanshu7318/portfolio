@@ -75,7 +75,7 @@ export const portfolioData = {
   ],
   skills: {
     technicalSoftware: ["DaVinci Resolve", "Premiere Pro", "After Effects", "Illustrator", "MS Office", "Advanced Excel"],
-    technicalTools: ["Figma / Adobe XD", "Git & GitHub", "Jupyter Notebook", "Google Colab", "Firebase", "Canva"],
+    technicalTools: ["Figma", "Git & GitHub", "Jupyter Notebook", "Google Colab", "Firebase", "Canva","AWS"],
     professionalSoftSkills: ["Team Collaboration", "Leadership", "Problem-Solving", "Time Management", "Event Management"]
   },
   journey: {
@@ -133,8 +133,8 @@ export const portfolioData = {
       category: "AI / NLP",
       techStack: ["Python", "Whisper", "HuggingFace", "FastAPI", "MongoDB"],
       githubLink: "https://github.com/priyanshu/deeprecall",
-      images: ["/assets/deeprecall-1.png", "/assets/projects/deeprecall-2.png", "/assets/projects/deeprecall-3.png", "/assets/projects/deeprecall-4.png"],
-      imageCount: "04 / 04"
+      images: ["/assets/projects/deeprecall-1.png", "/assets/projects/deeprecall-2.png", "/assets/projects/deeprecall-3.png"],
+      imageCount: "03 / 03"
     },
     {
       id: "02",
@@ -155,8 +155,8 @@ export const portfolioData = {
       category: "Deep Learning",
       techStack: ["FastAPI", "TensorFlow", "OpenCV", "Scikit-learn", "MongoDB"],
       githubLink: "https://github.com/priyanshu/shield",
-      images: ["/assets/projects/shield-1.png", "/assets/projects/shield-2.png", "/assets/projects/shield-3.png", "/assets/projects/shield-4.png"],
-      imageCount: "04 / 04"
+      images: ["/assets/projects/shield-1.png", "/assets/projects/shield-2.png", "/assets/projects/shield-3.png"],
+      imageCount: "03/ 03"
     },
     {
       id: "04",
@@ -166,8 +166,8 @@ export const portfolioData = {
       category: "Full-stack",
       techStack: ["React", "Node.js", "MongoDB", "Express"],
       githubLink: "https://github.com/priyanshu/nmak",
-      images: ["/assets/projects/nmak-1.png", "/assets/projects/nmak-2.png"],
-      imageCount: "02 / 03"
+      images: ["/assets/projects/nmak-1.png", "/assets/projects/nmak-2.png","/assets/projects/nmak-3.png"],
+      imageCount: "03 / 03"
     },
     {
       id: "05",
@@ -177,8 +177,8 @@ export const portfolioData = {
       category: "Streaming",
       techStack: ["React", "Node", "MongoDB", "AWS S3"],
       githubLink: "https://github.com/priyanshu/playvoo",
-      images: ["/assets/projects/playvoo-1.png"],
-      imageCount: "01 / 03"
+      images: ["/assets/projects/playvoo-1.png","/assets/projects/playvoo-2.png","/assets/projects/playvoo-3.png"],
+      imageCount: "03 / 03"
     },
     {
       id: "06",
@@ -188,8 +188,8 @@ export const portfolioData = {
       category: "Web App",
       techStack: ["React", "Node", "Stripe", "REST"],
       githubLink: "https://github.com/priyanshu/air-king",
-      images: ["/assets/projects/airking-1.png"],
-      imageCount: "01 / 03"
+      images: ["/assets/projects/airking-1.png","/assets/projects/airking-2.png","/assets/projects/airking-3.png"],
+      imageCount: "03 / 03"
     },
     {
       id: "07",
@@ -210,8 +210,8 @@ export const portfolioData = {
       category: "Frontend",
       techStack: ["React", "Tailwind", "shadcn/ui", "Framer Motion"],
       githubLink: "https://github.com/priyanshu/portfolio",
-      images: ["/assets/projects/portfolio-1.png", "/assets/projects/portfolio-2.png"],
-      imageCount: "02 / 03"
+      images: ["/assets/projects/portfolio-1.png", "/assets/projects/portfolio-2.png","/assets/projects/portfolio-3.png"],
+      imageCount: "03 / 03" 
     }
   ],
   hackathons: [
@@ -235,7 +235,8 @@ export const portfolioData = {
       location: "Cyber City, Gurugram",
       role: "Frontend Developer",
       prize: "₹50,000",
-      images: ["/assets/hackathons/gs-1.png", "/assets/hackathons/gs-2.png"]
+      images: ["/assets/hackathons/gs-1.png", "/assets/hackathons/gs-2.png"],
+      imageCount: "02 / 02"
     },
     {
       name: "BharatTech Xperience 2.0",
@@ -246,7 +247,8 @@ export const portfolioData = {
       location: "SVIET, Rajpura, Punjab",
       role: "Backend Developer",
       prize: "Best Community Project",
-      images: ["/assets/hackathons/bt-1.png", "/assets/hackathons/bt-2.png", "/assets/hackathons/bt-3.png"]
+      images: ["/assets/hackathons/bt-1.png", "/assets/hackathons/bt-2.png"],
+      imageCount: "02 / 02"
     },
     {
       name: "Endeavour Expo 2025",
@@ -257,7 +259,8 @@ export const portfolioData = {
       location: "CGC Jhanjeri, Mohali",
       role: "Software Management",
       prize: "Community Impact",
-      images: ["/assets/hackathons/ee-1.png", "/assets/hackathons/ee-2.png"]
+      images: ["/assets/hackathons/ee-1.png", "/assets/hackathons/ee-2.png"],
+      imageCount: "02 / 02"
     },
     {
       name: "HackMOL 6.0",
@@ -268,7 +271,9 @@ export const portfolioData = {
       location: "NIT Jalandhar, Punjab",
       role: "Backend Developer",
       prize: "Network Building",
-      images: ["/assets/hackathons/hm-1.png", "/assets/hackathons/hm-2.png"]
+      images: ["/assets/hackathons/hm-1.png", "/assets/hackathons/hm-2.png"],
+      imageCount: "02 / 02"
+
     },
     {
       name: "Hack the Future 2.0",
@@ -279,7 +284,8 @@ export const portfolioData = {
       location: "Tula's Institute, Dehradun",
       role: "AI Developer",
       prize: "AI & Innovation",
-      images: ["/assets/hackathons/hf-1.png", "/assets/hackathons/hf-2.png"]
+      images: ["/assets/hackathons/hf-1.png", "/assets/hackathons/hf-2.png"],
+      imageCount: "02 / 02"
     }
   ],
   contact: {
