@@ -224,7 +224,7 @@ export const portfolioData = {
       location: "Manav Rachna University, Faridabad",
       role: "Frontend Developer",
       prize: "₹50,000",
-      images: ["/assets/hackathons/sih-1.png", "/assets/hackathons/sih-2.png", "/assets/hackathons/sih-3.png"]
+      images: ["/assets/hackathons/sih-1.png"]
     },
     {
       name: "Goldman Sachs India Hackathon 2024",
