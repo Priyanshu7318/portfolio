@@ -77,7 +77,12 @@ export default function Home() {
             </motion.p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
+            className="flex flex-wrap justify-center gap-10"
+          >
             {[
               { label: 'Location', val: about.location, icon: MapPin, color: 'text-indigo-400', bg: 'bg-indigo-400/10' },
               { label: 'LeetCode', val: about.stats.leetcode, icon: Code2, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
@@ -85,12 +90,10 @@ export default function Home() {
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.4 + (i * 0.1) }}
+                whileHover={{ y: -5, scale: 1.05 }}
                 className="flex items-center gap-4 group cursor-default"
               >
-                <div className={`w-12 h-12 rounded-2xl ${stat.bg} flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-500`}>
+                <div className={`w-12 h-12 rounded-2xl ${stat.bg} flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
                   <stat.icon size={22} className={stat.color} />
                 </div>
                 <div className="text-left">
@@ -99,7 +102,7 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

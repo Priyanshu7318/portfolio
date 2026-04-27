@@ -16,14 +16,14 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen selection:bg-indigo-500/30 relative">
       <AnimatedBackground />
-      <main className="pb-32 relative z-10">
+      <main className="pb-32 relative z-10 overflow-x-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
             {children}
           </motion.div>

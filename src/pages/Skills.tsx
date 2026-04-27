@@ -82,8 +82,9 @@ export default function Skills() {
             key={section.title}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
+            transition={{ delay: index * 0.1, duration: 0.4 }}
             className="group relative h-full"
           >
             <div className={`glass-card p-10 h-full flex flex-col transition-all duration-500 ${section.borderColor} overflow-hidden shadow-2xl shadow-black/20`}>

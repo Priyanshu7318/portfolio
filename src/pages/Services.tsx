@@ -37,8 +37,13 @@ export default function Services() {
               key={service.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -8, scale: 1.02 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              transition={{ 
+                delay: i * 0.1, 
+                duration: 0.5,
+                scale: { type: "spring", stiffness: 300 }
+              }}
               className="group relative"
             >
               <div className="glass-card p-10 h-full flex flex-col transition-all duration-500 hover:border-indigo-500/50 hover:bg-indigo-500/[0.02]">

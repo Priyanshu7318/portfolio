@@ -3,7 +3,7 @@ export const portfolioData = {
     name: "PRIYANSHU SHAKYA",
     role: "Aspiring Data Scientist",
     bio: "Aspiring Data Scientist with hands-on experience in Python, SQL, machine learning, and data analytics. I've shipped AI & data-driven projects and solved 350+ coding problems. Passionate about turning data into intelligent systems that solve real-world problems.",
-    profileImage: "/assets/hero.png",
+    profileImage: "/src/assets/hero.png",
     location: "Mohali, Punjab, India",
     availability: "Available for Data Science & Analyst",
     focus: "AI • Data • Frontend",
@@ -133,7 +133,7 @@ export const portfolioData = {
       category: "AI / NLP",
       techStack: ["Python", "Whisper", "HuggingFace", "FastAPI", "MongoDB"],
       githubLink: "https://github.com/priyanshu/deeprecall",
-      images: ["/assets/projects/deeprecall-1.png", "/assets/projects/deeprecall-2.png", "/assets/projects/deeprecall-3.png"],
+      images: ["/src/assets/deeprecall-1.png", "/src/assets/deeprecall-2.png", "/src/assets/deeprecall-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -144,7 +144,7 @@ export const portfolioData = {
       category: "AI / Automation",
       techStack: ["React", "Node.js", "Python", "MongoDB", "JWT"],
       githubLink: "https://github.com/priyanshu/groit",
-      images: ["/assets/projects/groit-1.png", "/assets/projects/groit-2.png", "/assets/projects/groit-3.png"],
+      images: ["/src/assets/groit-1.png", "/src/assets/groit-2.png", "/src/assets/groit-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -155,7 +155,7 @@ export const portfolioData = {
       category: "Deep Learning",
       techStack: ["FastAPI", "TensorFlow", "OpenCV", "Scikit-learn", "MongoDB"],
       githubLink: "https://github.com/priyanshu/shield",
-      images: ["/assets/projects/shield-1.png", "/assets/projects/shield-2.png", "/assets/projects/shield-3.png"],
+      images: ["/src/assets/shield-1.png", "/src/assets/shield-2.png", "/src/assets/shield-3.png"],
       imageCount: "03/ 03"
     },
     {
@@ -166,7 +166,7 @@ export const portfolioData = {
       category: "Full-stack",
       techStack: ["React", "Node.js", "MongoDB", "Express"],
       githubLink: "https://github.com/priyanshu/nmak",
-      images: ["/assets/projects/nmak-1.png", "/assets/projects/nmak-2.png","/assets/projects/nmak-3.png"],
+      images: ["/src/assets/nmak-1.png", "/src/assets/nmak-2.png","/src/assets/nmak-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -177,7 +177,7 @@ export const portfolioData = {
       category: "Streaming",
       techStack: ["React", "Node", "MongoDB", "AWS S3"],
       githubLink: "https://github.com/priyanshu/playvoo",
-      images: ["/assets/projects/playvoo-1.png","/assets/projects/playvoo-2.png","/assets/projects/playvoo-3.png"],
+      images: ["/src/assets/playvoo-1.png","/src/assets/playvoo-2.png","/src/assets/playvoo-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -188,7 +188,7 @@ export const portfolioData = {
       category: "Web App",
       techStack: ["React", "Node", "Stripe", "REST"],
       githubLink: "https://github.com/priyanshu/air-king",
-      images: ["/assets/projects/airking-1.png","/assets/projects/airking-2.png","/assets/projects/airking-3.png"],
+      images: ["/src/assets/airking-1.png","/src/assets/airking-2.png", "/src/assets/airking-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -199,7 +199,7 @@ export const portfolioData = {
       category: "AgriTech",
       techStack: ["React", "FastAPI", "TensorFlow", "MongoDB"],
       githubLink: "https://github.com/priyanshu/kkv",
-      images: ["/assets/projects/kkv-1.png", "/assets/projects/kkv-2.png", "/assets/projects/kkv-3.png"],
+      images: ["/src/assets/kkv-1.png", "/src/assets/kkv-2.png", "/src/assets/kkv-3.png"],
       imageCount: "03 / 03"
     },
     {
@@ -210,7 +210,7 @@ export const portfolioData = {
       category: "Frontend",
       techStack: ["React", "Tailwind", "shadcn/ui", "Framer Motion"],
       githubLink: "https://github.com/priyanshu/portfolio",
-      images: ["/assets/projects/portfolio-1.png", "/assets/projects/portfolio-2.png","/assets/projects/portfolio-3.png"],
+      images: ["/src/assets/portfolio-1.png", "/src/assets/portfolio-2.png","/src/assets/portfolio-3.png"],
       imageCount: "03 / 03" 
     }
   ],
@@ -224,7 +224,7 @@ export const portfolioData = {
       location: "Manav Rachna University, Faridabad",
       role: "Frontend Developer",
       prize: "₹50,000",
-      images: ["/assets/hackathons/sih-1.png"]
+      images: ["/src/assets/sih-1.png"]
     },
     {
       name: "Goldman Sachs India Hackathon 2024",
@@ -235,7 +235,7 @@ export const portfolioData = {
       location: "Cyber City, Gurugram",
       role: "Frontend Developer",
       prize: "₹50,000",
-      images: ["/assets/hackathons/gs-1.png"],
+      images: ["/src/assets/gs-1.png"],
     },
     {
       name: "BharatTech Xperience 2.0",
@@ -246,7 +246,7 @@ export const portfolioData = {
       location: "SVIET, Rajpura, Punjab",
       role: "Backend Developer",
       prize: "Best Community Project",
-      images: ["/assets/hackathons/bt-1.png"],
+      images: ["/src/assets/bt-1.png"],
     },
     {
       name: "Endeavour Expo 2025",
@@ -257,7 +257,7 @@ export const portfolioData = {
       location: "CGC Jhanjeri, Mohali",
       role: "Software Management",
       prize: "Community Impact",
-      images: ["/assets/hackathons/ee-1.png"],
+      images: ["/src/assets/ee-1.png"],
     },
     {
       name: "HackMOL 6.0",
@@ -268,7 +268,7 @@ export const portfolioData = {
       location: "NIT Jalandhar, Punjab",
       role: "Backend Developer",
       prize: "Network Building",
-      images: ["/assets/hackathons/hm-1.png"],
+      images: ["/src/assets/hm-1.png"],
 
     },
     {
@@ -280,7 +280,7 @@ export const portfolioData = {
       location: "Tula's Institute, Dehradun",
       role: "AI Developer",
       prize: "AI & Innovation",
-      images: ["/assets/hackathons/hf-1.png"],
+      images: ["/src/assets/hf-1.png"],
     }
   ],
   contact: {
