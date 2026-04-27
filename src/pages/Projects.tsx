@@ -51,34 +51,6 @@ export default function Projects() {
         Back to home
       </Link>
 
-      {/* Background Icons */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
-        {[Layers, Brain, Zap, Rocket, Code2, Globe].map((Icon, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0 }}
-            animate={{ 
-              opacity: [0.05, 0.1, 0.05],
-              y: [Math.random() * 100, Math.random() * -100],
-              x: [Math.random() * 50, Math.random() * -50],
-              rotate: [0, 360]
-            }}
-            transition={{ 
-              duration: 15 + Math.random() * 20, 
-              repeat: Infinity,
-              ease: "linear"
-            }}
-            className="absolute text-indigo-500/20"
-            style={{
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-            }}
-          >
-            <Icon size={50 + Math.random() * 70} />
-          </motion.div>
-        ))}
-      </div>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -10,55 +10,6 @@ export default function Home() {
     <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-[85vh] relative text-center overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-500/10 rounded-full blur-[120px] animate-pulse" />
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-indigo-400 rounded-full blur-sm animate-ping" />
-          <div className="absolute bottom-1/4 right-1/4 w-3 h-3 bg-cyan-400 rounded-full blur-sm animate-ping" style={{ animationDelay: '1s' }} />
-          
-          {/* Floating Icons Background */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
-            {[Code2, Rocket, Brain, Cpu, Database, Sparkles].map((Icon, i) => (
-              <motion.div
-                key={i}
-                initial={{ 
-                  x: Math.random() * 100 - 50 + '%', 
-                  y: Math.random() * 100 - 50 + '%',
-                  opacity: 0 
-                }}
-                animate={{ 
-                  x: [
-                    Math.random() * 100 - 50 + '%', 
-                    Math.random() * 100 - 50 + '%', 
-                    Math.random() * 100 - 50 + '%'
-                  ],
-                  y: [
-                    Math.random() * 100 - 50 + '%', 
-                    Math.random() * 100 - 50 + '%', 
-                    Math.random() * 100 - 50 + '%'
-                  ],
-                  opacity: [0.1, 0.3, 0.1],
-                  rotate: [0, 180, 360]
-                }}
-                transition={{ 
-                  duration: 20 + Math.random() * 10, 
-                  repeat: Infinity, 
-                  ease: "linear" 
-                }}
-                className="absolute text-indigo-500/30"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                }}
-              >
-                <Icon size={40 + Math.random() * 40} />
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Moving Grid Lines */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
-        </div>
         
         <motion.div 
           initial={{ y: 30, opacity: 0 }}

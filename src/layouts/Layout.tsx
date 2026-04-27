@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation, Link } from 'react-router-dom';
 import { Github as GitHub, Linkedin as LinkedIn, MessageCircle } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
+import AnimatedBackground from '../components/AnimatedBackground';
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,8 +14,9 @@ export default function Layout({ children }: LayoutProps) {
   const { about } = portfolioData;
 
   return (
-    <div className="min-h-screen bg-slate-950 selection:bg-indigo-500/30">
-      <main className="pb-32">
+    <div className="min-h-screen selection:bg-indigo-500/30 relative">
+      <AnimatedBackground />
+      <main className="pb-32 relative z-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
