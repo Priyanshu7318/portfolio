@@ -99,7 +99,7 @@ export default function Puzzle() {
         <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-indigo-500/50 transition-colors">
           <HomeIcon size={14} />
         </div>
-        Back to Base
+        Back to Home 
       </Link>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
