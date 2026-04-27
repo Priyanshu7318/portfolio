@@ -29,7 +29,7 @@ export const portfolioData = {
         { name: "JavaScript", detail: "Full-stack Node & React", icon: "JA", subItems: ["Node.js", "React.js", "REST APIs", "TypeScript"] },
         { name: "Machine Learning", detail: "Deep Learning & NLP", icon: "MA", subItems: ["TensorFlow", "HuggingFace", "spaCy"] },
         { name: "LLMs", detail: "OpenAI, GPT, Ollama", icon: "LL", subItems: ["LangChain", "RAG", "Vector DB"] },
-        { name: "C / C++", detail: "DSA & problem solving", icon: "C", subItems: ["STL", "Algorithms"] },
+        { name: "C++", detail: "DSA & problem solving", icon: "C", subItems: ["STL", "Algorithms"] },
         { name: "MySQL", detail: "Relational databases", icon: "MY", subItems: ["Queries", "Joins", "Schema Design"] },
         { name: "HTML5 / CSS3", detail: "Responsive web design", icon: "HT", subItems: ["Tailwind", "Flex", "Grid"] }
       ]
