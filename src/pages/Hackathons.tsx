@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Trophy, Calendar, MapPin, Target, ChevronLeft, ChevronRight, Award, Flame, Home as HomeIcon, Sparkles, Code2, Rocket, Brain } from 'lucide-react';
+import { Trophy, Calendar, MapPin, Target, ChevronLeft, ChevronRight, Award, Flame, Home as HomeIcon, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Hackathons() {
@@ -73,7 +73,7 @@ export default function Hackathons() {
                   <AnimatePresence mode="wait">
                     <motion.img 
                       key={`${hack.name}-${currentImgIndex}`}
-                      src={hackImages[currentImgIndex]} 
+                      src={hackImages[currentImgIndex].startsWith('http') ? hackImages[currentImgIndex] : import.meta.env.BASE_URL + hackImages[currentImgIndex]} 
                       alt={hack.name}
                       initial={{ opacity: 0, scale: 1.1 }}
                       animate={{ opacity: 1, scale: 1 }}

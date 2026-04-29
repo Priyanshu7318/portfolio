@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Github, Linkedin, Mail, Award, BookOpen, Rocket, MapPin, Code2, Globe, Download, Brain, Cpu, Database, Sparkles, Trophy } from 'lucide-react';
+import { Github, Linkedin, Mail, Award, BookOpen, Rocket, MapPin, Code2, Globe, Download, Cpu, Sparkles, Trophy } from 'lucide-react';
 
 export default function About() {
   const { about } = portfolioData;
@@ -33,7 +33,7 @@ export default function About() {
               <Linkedin size={14} /> Hire Me
             </a>
             <a 
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 glass-card text-white rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all active:scale-95 flex items-center gap-2 border-slate-800"

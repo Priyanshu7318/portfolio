@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { PenTool, Terminal, Users, Zap, CheckCircle2, Home as HomeIcon } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { PenTool, Terminal, Users, Zap, CheckCircle2 } from 'lucide-react';
 
 export default function Skills() {
   const { technicalSoftware, technicalTools, professionalSoftSkills } = portfolioData.skills;

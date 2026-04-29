@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Rocket, GraduationCap, Award, MapPin, Home as HomeIcon } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Rocket, GraduationCap, Award, MapPin } from 'lucide-react';
 
 export default function Journey() {
   const { experience, education, certifications } = portfolioData.journey;

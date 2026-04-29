@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Mail, Phone, MapPin, Github, Linkedin, MessageCircle, Send, ExternalLink, Code2, Globe, Calendar, Clock, Sparkles, Coffee } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, MessageCircle, ExternalLink, Code2, Globe, Calendar, Clock, Sparkles, Coffee } from 'lucide-react';
 
 export default function Contact() {
   const { contact, about } = portfolioData;

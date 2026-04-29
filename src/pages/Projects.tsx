@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Github as GitHub, ExternalLink, ChevronLeft, ChevronRight, Layers, Brain, Zap, Cpu, Database, Play, Globe, Sprout, Layout, Home as HomeIcon, Sparkles, Rocket, Code2 } from 'lucide-react';
+import { Github as GitHub, ExternalLink, ChevronLeft, ChevronRight, Layers, Brain, Zap, Cpu, Database, Play, Globe, Sprout, Layout, Home as HomeIcon, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const categoryIcons: { [key: string]: any } = {
@@ -135,7 +135,7 @@ export default function Projects() {
                     <AnimatePresence mode="wait">
                       <motion.img 
                         key={`${project.id}-${currentImgIndex}`}
-                        src={projectImages[currentImgIndex]} 
+                        src={projectImages[currentImgIndex].startsWith('http') ? projectImages[currentImgIndex] : import.meta.env.BASE_URL + projectImages[currentImgIndex]} 
                         alt={project.title}
                         initial={{ opacity: 0, scale: 1.1 }}
                         animate={{ opacity: 1, scale: 1 }}

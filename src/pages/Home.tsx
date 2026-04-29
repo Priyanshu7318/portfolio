@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolio';
-import { Github, ExternalLink, Code2, Rocket, Trophy, MapPin, ChevronRight, Gamepad2, Sparkles, Brain, Cpu, Database } from 'lucide-react';
+import { ExternalLink, Code2, Rocket, Trophy, MapPin, ChevronRight, Gamepad2, Sparkles, Brain, Database } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -87,7 +87,7 @@ export default function Home() {
               { label: 'Location', val: about.location, icon: MapPin, color: 'text-indigo-400', bg: 'bg-indigo-400/10' },
               { label: 'LeetCode', val: about.stats.leetcode, icon: Code2, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
               { label: 'Streak', val: about.stats.gfgStreak, icon: Rocket, color: 'text-orange-500', bg: 'bg-orange-500/10' }
-            ].map((stat, i) => (
+            ].map((stat) => (
               <motion.div
                 key={stat.label}
                 whileHover={{ y: -5, scale: 1.05 }}
@@ -335,7 +335,7 @@ export default function Home() {
               </div>
               Education
             </h3>
-            {portfolioData.journey.education.slice(0, 1).map((edu, i) => (
+            {portfolioData.journey.education.slice(0, 1).map((edu) => (
               <motion.div
                 key={edu.degree}
                 initial={{ opacity: 0, x: 20 }}
