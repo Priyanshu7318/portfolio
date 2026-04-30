@@ -71,14 +71,10 @@ export default function Hackathons() {
                 {/* Image Slider */}
                 <div className="relative aspect-[16/10] bg-slate-950 overflow-hidden">
                   <AnimatePresence mode="wait">
-                    <motion.img 
+                    <img 
                       key={`${hack.name}-${currentImgIndex}`}
                       src={hackImages[currentImgIndex].startsWith('http') ? hackImages[currentImgIndex] : import.meta.env.BASE_URL + hackImages[currentImgIndex]} 
                       alt={hack.name}
-                      initial={{ opacity: 0, scale: 1.1 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.95 }}
-                      transition={{ duration: 0.4 }}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = `https://api.dicebear.com/7.x/shapes/svg?seed=${hack.name}-${currentImgIndex}`;

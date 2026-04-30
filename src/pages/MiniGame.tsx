@@ -49,7 +49,7 @@ export default function Puzzle() {
     return neighbors;
   };
 
-  const shuffle = () => {
+  const shuffle = useCallback(() => {
     let newTiles = Array.from({ length: TILE_COUNT }, (_, i) => i);
     // Perform a series of valid moves to ensure solvability
     let emptyIndex = TILE_COUNT - 1;
@@ -66,7 +66,16 @@ export default function Puzzle() {
     setTime(0);
     setIsGameOver(false);
     setIsGameStarted(true);
-  };
+  }, []);
+
+  useEffect(() => {
+    if (isGameOver) {
+      const timer = setTimeout(() => {
+        shuffle();
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [isGameOver, shuffle]);
 
   const handleTileClick = (index: number) => {
     if (isGameOver || !isGameStarted) return;
@@ -194,13 +203,8 @@ export default function Puzzle() {
                 >
                   <Trophy size={80} className="text-orange-500 mb-6 animate-bounce" />
                   <h2 className="text-4xl font-black text-white uppercase tracking-tighter mb-2">Mission Accomplished!</h2>
-                  <p className="text-slate-400 mb-8 font-medium">You solved it in {moves} moves and {time} seconds.</p>
-                  <button
-                    onClick={shuffle}
-                    className="px-12 py-4 bg-orange-600 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-orange-500 transition-all shadow-xl shadow-orange-500/40"
-                  >
-                    Play Again
-                  </button>
+                  <p className="text-slate-400 mb-4 font-medium">You solved it in {moves} moves and {time} seconds.</p>
+                  <p className="text-orange-500 text-[10px] font-black uppercase tracking-widest animate-pulse">Auto-refreshing in 3 seconds...</p>
                 </motion.div>
               )}
             </AnimatePresence>

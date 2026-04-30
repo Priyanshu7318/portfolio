@@ -11,114 +11,67 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-[85vh] relative text-center overflow-hidden">
         
-        <motion.div 
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-5xl space-y-12 relative"
-        >
+        <div className="max-w-5xl space-y-12 relative">
           <div className="space-y-8">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="flex items-center justify-center gap-4"
-            >
+            <div className="flex items-center justify-center gap-4">
               <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-indigo-500/50" />
               <span className="px-5 py-2 rounded-full bg-indigo-500/10 text-indigo-400 text-[10px] font-black uppercase tracking-[0.3em] border border-indigo-500/20 backdrop-blur-md shadow-xl shadow-indigo-500/5">
                 {about.availability}
               </span>
               <div className="h-[1px] w-16 bg-gradient-to-l from-transparent to-indigo-500/50" />
-            </motion.div>
+            </div>
 
             <div className="relative inline-block">
-              <motion.h1 
-                className="text-7xl md:text-[10rem] font-black leading-[0.8] tracking-tighter uppercase mb-2"
-              >
+              <h1 className="text-7xl md:text-[10rem] font-black leading-[0.8] tracking-tighter uppercase mb-2">
                 {about.name.split(' ').map((word, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ y: 100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ 
-                      delay: 0.4 + (i * 0.15),
-                      duration: 0.8,
-                      ease: [0.215, 0.61, 0.355, 1]
-                    }}
-                    className="inline-block mr-4 last:mr-0"
-                  >
+                  <span key={i} className="inline-block mr-4 last:mr-0">
                     {i === 1 ? (
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-cyan-400 to-indigo-400 bg-[length:200%_auto] animate-gradient-x">
+                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-cyan-400 to-indigo-400 bg-[length:200%_auto]">
                         {word}
                       </span>
                     ) : word}
-                  </motion.span>
+                  </span>
                 ))}
-              </motion.h1>
+              </h1>
               
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: '100%' }}
-                transition={{ delay: 1, duration: 1 }}
-                className="h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"
-              />
+              <div className="h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent w-full" />
             </div>
 
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2 }}
-              className="text-xl md:text-3xl text-slate-400 max-w-3xl mx-auto leading-tight font-medium tracking-tight"
-            >
+            <p className="text-xl md:text-3xl text-slate-400 max-w-3xl mx-auto leading-tight font-medium tracking-tight">
               {about.bio.split('. ')[0]}.
               <span className="block text-slate-600 text-lg mt-4 font-bold uppercase tracking-widest">
                 {about.focus}
               </span>
-            </motion.p>
+            </p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-            className="flex flex-wrap justify-center gap-10"
-          >
+          <div className="flex flex-wrap justify-center gap-10">
             {[
               { label: 'Location', val: about.location, icon: MapPin, color: 'text-indigo-400', bg: 'bg-indigo-400/10' },
               { label: 'LeetCode', val: about.stats.leetcode, icon: Code2, color: 'text-yellow-500', bg: 'bg-yellow-500/10' },
               { label: 'Streak', val: about.stats.gfgStreak, icon: Rocket, color: 'text-orange-500', bg: 'bg-orange-500/10' }
             ].map((stat) => (
-              <motion.div
-                key={stat.label}
-                whileHover={{ y: -5, scale: 1.05 }}
-                className="flex items-center gap-4 group cursor-default"
-              >
-                <div className={`w-12 h-12 rounded-2xl ${stat.bg} flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-500 shadow-lg`}>
+              <div key={stat.label} className="flex items-center gap-4 group cursor-default">
+                <div className={`w-12 h-12 rounded-2xl ${stat.bg} flex items-center justify-center border border-white/5 transition-transform duration-500 shadow-lg`}>
                   <stat.icon size={22} className={stat.color} />
                 </div>
                 <div className="text-left">
                   <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">{stat.label}</p>
-                  <p className="text-sm font-bold text-slate-300 group-hover:text-white transition-colors">{stat.val}</p>
+                  <p className="text-sm font-bold text-slate-300 transition-colors">{stat.val}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.8 }}
-            className="flex flex-wrap justify-center gap-6 pt-4"
-          >
+          <div className="flex flex-wrap justify-center gap-6 pt-4">
             <Link to="/contact" className="group relative px-12 py-6 bg-indigo-600 text-white rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] transition-all hover:bg-indigo-500 shadow-2xl shadow-indigo-500/40 active:scale-95 overflow-hidden">
               <span className="relative z-10">Initialize Contact</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </Link>
             <Link to="/projects" className="px-12 py-6 glass-card hover:bg-slate-800 text-white rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] transition-all flex items-center gap-3 active:scale-95 border-slate-800">
               Explore Projects
             </Link>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         
         {/* Scroll Indicator */}
         <motion.div
@@ -182,12 +135,8 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.slice(0, 3).map((service, i) => (
-            <motion.div
+            <div
               key={service.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
               className="glass-card p-8 group hover:border-indigo-500/30 transition-all flex flex-col h-full"
             >
               <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500 mb-6">
@@ -195,7 +144,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-black text-white uppercase tracking-tight mb-3">{service.name}</h3>
               <p className="text-slate-500 text-sm leading-relaxed font-medium flex-1">{service.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

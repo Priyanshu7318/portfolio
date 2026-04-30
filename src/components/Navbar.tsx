@@ -26,9 +26,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed md:top-6 md:bottom-auto md:left-1/2 md:-translate-x-1/2 md:translate-y-0 top-1/2 -translate-y-1/2 left-4 z-50 px-4 md:w-full max-w-fit">
-      <motion.div 
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+      <div 
         className="flex md:flex-row flex-col items-center gap-1 p-2 glass-card shadow-2xl overflow-y-auto md:overflow-x-auto no-scrollbar max-h-[80vh] md:max-h-none"
       >
         <Link 
@@ -43,10 +41,8 @@ export default function Navbar() {
           const Icon = item.icon;
           
           return (
-            <motion.div
+            <div
               key={item.path}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.95 }}
             >
               <Link
                 to={item.path}
@@ -69,17 +65,15 @@ export default function Navbar() {
                   {item.label}
                 </span>
                 {isActive && (
-                  <motion.div
-                    layoutId="nav-indicator"
+                  <div
                     className="absolute inset-0 bg-indigo-500/10 rounded-xl -z-10 border border-indigo-500/20"
-                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
               </Link>
-            </motion.div>
+            </div>
           );
         })}
-      </motion.div>
+      </div>
     </nav>
   );
 }

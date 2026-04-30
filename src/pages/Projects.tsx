@@ -113,40 +113,29 @@ export default function Projects() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-        <AnimatePresence mode="popLayout">
-          {filteredProjects.map((project, idx) => {
-            const currentImgIndex = activeImage[project.id] || 0;
-            const projectImages = project.images || [`https://api.dicebear.com/7.x/shapes/svg?seed=${project.title}`];
-            
-            return (
-              <motion.div
-                key={project.id}
-                layout
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                whileHover={{ y: -10 }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group flex flex-col h-full"
-              >
-                <div className="glass-card flex flex-col h-full hover:border-indigo-500/40 transition-all duration-500 shadow-2xl shadow-black/20">
-                  {/* Image Section */}
-                  <div className="relative aspect-video bg-slate-950 overflow-hidden">
-                    <AnimatePresence mode="wait">
-                      <motion.img 
-                        key={`${project.id}-${currentImgIndex}`}
-                        src={projectImages[currentImgIndex].startsWith('http') ? projectImages[currentImgIndex] : import.meta.env.BASE_URL + projectImages[currentImgIndex]} 
-                        alt={project.title}
-                        initial={{ opacity: 0, scale: 1.1 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.95 }}
-                        transition={{ duration: 0.4 }}
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src = `https://api.dicebear.com/7.x/shapes/svg?seed=${project.title}-${currentImgIndex}`;
-                        }}
-                      />
-                    </AnimatePresence>
+        {filteredProjects.map((project, idx) => {
+          const currentImgIndex = activeImage[project.id] || 0;
+          const projectImages = project.images || [`https://api.dicebear.com/7.x/shapes/svg?seed=${project.title}`];
+          
+          return (
+            <div
+              key={project.id}
+              className="group flex flex-col h-full"
+            >
+              <div className="glass-card flex flex-col h-full hover:border-indigo-500/40 transition-all duration-500 shadow-2xl shadow-black/20">
+                {/* Image Section */}
+                <div className="relative aspect-video bg-slate-950 overflow-hidden">
+                  <div className="relative w-full h-full">
+                    <img 
+                      key={`${project.id}-${currentImgIndex}`}
+                      src={projectImages[currentImgIndex].startsWith('http') ? projectImages[currentImgIndex] : import.meta.env.BASE_URL + projectImages[currentImgIndex]} 
+                      alt={project.title}
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://api.dicebear.com/7.x/shapes/svg?seed=${project.title}-${currentImgIndex}`;
+                      }}
+                    />
+                  </div>
                     
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
                     
@@ -191,23 +180,14 @@ export default function Projects() {
 
                   {/* Content Section */}
                   <div className="p-8 flex-1 flex flex-col relative">
-                    <motion.div 
-                      animate={{ 
-                        y: [0, -5, 0],
-                        rotate: [0, 5, 0, -5, 0]
-                      }}
-                      transition={{
-                        duration: 6,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
+                    <div 
                       className="absolute top-0 right-8 -translate-y-1/2 w-16 h-16 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-500 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500 shadow-xl group-hover:rotate-12"
                     >
                       {(() => {
                         const Icon = categoryIcons[project.category] || Layers;
                         return <Icon size={32} />;
                       })()}
-                    </motion.div>
+                    </div>
                     <div className="flex justify-between items-start mb-4">
                       <div className="space-y-1">
                         <h4 className="text-indigo-400 text-[10px] font-black uppercase tracking-[0.2em]">{project.subtitle}</h4>
@@ -224,14 +204,13 @@ export default function Projects() {
 
                     <div className="flex flex-wrap gap-2 mb-8">
                       {project.techStack.map((tech) => (
-                        <motion.span 
+                        <span 
                           key={tech} 
-                          whileHover={{ scale: 1.1, y: -2 }}
                           className="px-3 py-1 bg-slate-900/50 rounded-lg text-[10px] font-bold text-slate-300 border border-slate-800 group-hover:border-indigo-500/30 transition-colors flex items-center gap-1.5"
                         >
                           <div className="w-1 h-1 rounded-full bg-indigo-500/50 group-hover:bg-indigo-500" />
                           {tech}
-                        </motion.span>
+                        </span>
                       ))}
                     </div>
 
@@ -253,10 +232,9 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
-        </AnimatePresence>
       </div>
     </div>
   );
