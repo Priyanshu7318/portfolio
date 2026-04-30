@@ -132,7 +132,7 @@ export const portfolioData = {
       description: "DeepRecall is an intelligent AI companion that remembers your conversations, understands them, and can recall them whenever you ask—just like human memory",
       category: "AI / NLP",
       techStack: ["Python", "Whisper", "HuggingFace", "FastAPI", "MongoDB"],
-      githubLink: "https://github.com/priyanshu/deeprecall",
+      githubLink: "https://github.com/Priyanshu7318/Deeprecall",
       images: ["assets/deeprecall-1.png", "assets/deeprecall-2.png", "assets/deeprecall-3.png"],
       imageCount: "03 / 03"
     },
@@ -143,7 +143,7 @@ export const portfolioData = {
       description: "Modular AI assistant for task automation, scheduling, smart reminders and content generation using intent detection and memory recall. Features a clean, futuristic dashboard and voice integration.",
       category: "AI / Automation",
       techStack: ["React", "Node.js", "Python", "MongoDB", "JWT"],
-      githubLink: "https://github.com/priyanshu/groit",
+      githubLink: "https://github.com/Priyanshu7318/GROIT",
       images: ["assets/groit-1.png", "assets/groit-2.png", "assets/groit-3.png"],
       imageCount: "03 / 03"
     },
@@ -154,7 +154,7 @@ export const portfolioData = {
       description: "AI platform detecting deepfake videos, AI voices, images and scam texts. Includes risk-scoring, a real-time React dashboard, and instant alerts for suspicious activity.",
       category: "Deep Learning",
       techStack: ["FastAPI", "TensorFlow", "OpenCV", "Scikit-learn", "MongoDB"],
-      githubLink: "https://github.com/priyanshu/shield",
+      githubLink: "https://github.com/Priyanshu7318/SHIELD",
       images: ["assets/shield-1.png", "assets/shield-2.png", "assets/shield-3.png"],
       imageCount: "03/ 03"
     },
@@ -165,7 +165,7 @@ export const portfolioData = {
       description: "Connects users to verified lawyers with authentication, emergency support, legal blog and multilingual FAQs.",
       category: "Full-stack",
       techStack: ["React", "Node.js", "MongoDB", "Express"],
-      githubLink: "https://github.com/priyanshu/nmak",
+      githubLink: "https://github.com/Priyanshu7318/NMAK",
       images: ["assets/nmak-1.png", "assets/nmak-2.png","assets/nmak-3.png"],
       imageCount: "03 / 03"
     },
@@ -176,7 +176,7 @@ export const portfolioData = {
       description: "Video platform with upload, streaming, likes, comments, subscriptions and a recommendation engine.",
       category: "Streaming",
       techStack: ["React", "Node", "MongoDB", "AWS S3"],
-      githubLink: "https://github.com/priyanshu/playvoo",
+      githubLink: "https://github.com/Priyanshu7318/Playvoo",
       images: ["assets/playvoo-1.png","assets/playvoo-2.png","assets/playvoo-3.png"],
       imageCount: "03 / 03"
     },
@@ -187,7 +187,7 @@ export const portfolioData = {
       description: "Airline portal with flight reservations, status tracking, payment integration and customer support.",
       category: "Web App",
       techStack: ["React", "Node", "Stripe", "REST"],
-      githubLink: "https://github.com/priyanshu/air-king",
+      githubLink: "https://github.com/Priyanshu7318/Air-King",
       images: ["assets/airking-1.png","assets/airking-2.png", "assets/airking-3.png"],
       imageCount: "03 / 03"
     },
@@ -198,7 +198,7 @@ export const portfolioData = {
       description: "Digital mandi for farmers — trade produce, crop-disease detection, equipment rentals, live prices and a multilingual chatbot.",
       category: "AgriTech",
       techStack: ["React", "FastAPI", "TensorFlow", "MongoDB"],
-      githubLink: "https://github.com/priyanshu/kkv",
+      githubLink: "https://github.com/Priyanshu7318/KISAAN-KRIRSHI-AUR-VYAPAAR",
       images: ["assets/kkv-1.png", "assets/kkv-2.png", "assets/kkv-3.png"],
       imageCount: "03 / 03"
     },
@@ -209,7 +209,7 @@ export const portfolioData = {
       description: "This modern, responsive portfolio — showcasing projects, skills and experience with smooth motion design. Built with React and Tailwind.",
       category: "Frontend",
       techStack: ["React", "Tailwind", "shadcn/ui", "Framer Motion"],
-      githubLink: "https://github.com/priyanshu/portfolio",
+      githubLink: "https://github.com/Priyanshu7318/portfolio",
       images: ["assets/portfolio-1.png", "assets/portfolio-2.png","assets/portfolio-3.png"],
       imageCount: "03 / 03" 
     }
