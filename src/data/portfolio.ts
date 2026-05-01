@@ -211,7 +211,7 @@ export const portfolioData = {
       techStack: ["React", "Tailwind", "shadcn/ui", "Framer Motion"],
       githubLink: "https://github.com/Priyanshu7318/portfolio",
       images: ["assets/portfolio-1.png", "assets/portfolio-2.png","assets/portfolio-3.png"],
-      imageCount: "03 / 02" 
+      imageCount: "03 / 03" 
     }
   ],
   hackathons: [
