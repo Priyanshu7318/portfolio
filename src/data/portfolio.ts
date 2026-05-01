@@ -267,7 +267,7 @@ export const portfolioData = {
       date: "10–11 Apr 2025",
       location: "NIT Jalandhar, Punjab",
       role: "Backend Developer",
-      prize: "Network Buildin",
+      prize: "Network Building",
       images: ["assets/hm-1.png"],
 
     },
