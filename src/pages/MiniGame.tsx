@@ -51,7 +51,6 @@ export default function Puzzle() {
 
   const shuffle = useCallback(() => {
     let newTiles = Array.from({ length: TILE_COUNT }, (_, i) => i);
-    // Perform a series of valid moves to ensure solvability
     let emptyIndex = TILE_COUNT - 1;
     
     for (let i = 0; i < 100; i++) {
