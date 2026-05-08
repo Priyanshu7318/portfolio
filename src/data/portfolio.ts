@@ -243,7 +243,7 @@ export const portfolioData = {
       duration: "24h",
       project: "NMAK legal portal",
       date: "8–9 Feb 2025",
-      location: "SVIET, Rajpura, Punjab",
+      location: "SVIET, Rajpura , Punjab",
       role: "Backend Developer",
       prize: "Best Community Project",
       images: ["assets/bt-1.png"],
